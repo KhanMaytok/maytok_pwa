@@ -20,7 +20,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -53,7 +52,6 @@ table {
 ***********/
 body{
     background: #E7E7E7;
-    font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     color: #666;
     font-size: 16px;
@@ -84,7 +82,6 @@ html, body {
 ***********/
 /* Typography */
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: bold;
     margin: 10px 0;
     color: #555;
@@ -198,7 +195,6 @@ form .input-row.message-row label{
 }
 form .input-row textarea{
     position: relative;
-    font: normal 12px/1.5 "Lucida Grande", arial, sans-serif;
     margin: 0;
     padding: 0;
     width: 80.2%;
@@ -505,9 +501,6 @@ hr.large-icon:before{
     float: none;
     display: inline-block;
 }
-.main-header.central nav li.search {
-    /*display: block;*/
-}
 .main-header.central nav li.search input {
     float: none;
 }
@@ -561,6 +554,7 @@ section span.post-date{
     -moz-transform: rotate(90deg);     /* Firefox */
     -ms-transform: rotate(90deg);      /* IE */
     -o-transform: rotate(90deg);       /* Opera */
+    transform: rotate(90deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1)    /* Internet Explorer */;
     position: absolute;
     right: -49px;
@@ -577,9 +571,6 @@ section span.post-date{
 .section-container a.pure-button{
     border-bottom: none;
     vertical-align: bottom;
-}
-.section-container .pure-button:hover,
-.section-container a.pure-button:hover{
 }
 .section-container img {
     margin: 0 0 20px 0;
@@ -690,10 +681,6 @@ section.quote .author:before{
 }
 
 
-/* section.link */
-section.link{
-
-}
 section.link .post-title{
     text-align: center;
 }
@@ -742,10 +729,6 @@ section.poster .post-title a{
     padding: 0 10px;
 }
 
-/* section.slider-post-type */
-section.gallery-post-type{
-
-}
 section.gallery-post-type .section-container{
     padding-top: 20px;
 }
@@ -1154,6 +1137,7 @@ and (max-width : 1024px) {
         position: inherit;
         -webkit-transform: none;
         -moz-transform: none;
+        transform: none;
         -o-background-size: none;
         background-size: none;
     }
@@ -1247,6 +1231,7 @@ and (max-width : 1024px) {
         position: inherit;
         -webkit-transform: none;
         -moz-transform: none;
+        transform: none;
         -o-background-size: none;
         background-size: none;
         margin-bottom: 10px;
@@ -1321,4 +1306,14 @@ and (max-width : 1024px) {
         display: block !important;
     }
 
+}
+
+p{
+    color: rgb(51, 51, 51);
+    text-decoration: none solid rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 16px / normal -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
 }

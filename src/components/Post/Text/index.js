@@ -10,7 +10,7 @@ export default function (props) {
                 <img src="temp-files/apple-first-logo.jpg" className="alignright" alt="Image" />
 
 
-                <p>Lorem ipsum dolor sit amet, accumsan taciti. Non ridiculus nullam, in posuere cursus aliquam ipsum, dolor dui, mattis at conubia. Fermentum velit, in mauris tellus, porta arcu, mauris eget nec urna rutrum, suspendisse dui.  <span className="highlights">mattis suspendisse phasellus</span>, Malesuada nec sapien, mauris elit eros et, tristique ultricies magna at. </p>
+                <p>Quickly scaffold new projects with your preferred view library and toolkit. Kick it off with a perfect Lighthouse score! </p>
 
                 <p>Id mauris feugiat nisl. Leo auctor mauris volutpat, pellentesque quis metus amet proin fringilla gravida, nulla arcu, condimentum est commodo donec non, suspendisse odio. Gravida elit quis vulputate urna dis, suspendisse do vel posuere vel libero mi. Cras nec odio in. </p><p>Dictumst tincidunt vestibulum vivamus, aliquam massa mi amet. Eget varius dapibus.</p>
 

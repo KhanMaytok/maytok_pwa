@@ -1,15 +1,16 @@
 import React from 'react';
-import Code from '@components/Code';
 import { HMR } from '@pwa/preset-react';
-import Window from '@components/Window';
 import Text from '@components/Post/Text';
 import Quote from '@components/Post/Quote';
-
-import style from './index.sass';
+import Image from '@components/Post/Image';
 
 function Home() {
 	return (
-		<Text />
+		<React.Fragment>
+			<Text />
+			<Image />
+			<Quote />
+		</React.Fragment>
 	);
 }
 
