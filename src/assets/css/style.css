@@ -1308,7 +1308,7 @@ and (max-width : 1024px) {
 
 }
 
-p{
+p, .main-header{
     color: rgb(51, 51, 51);
     text-decoration: none solid rgb(51, 51, 51);
     caret-color: rgb(51, 51, 51);
