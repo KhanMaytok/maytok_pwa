@@ -5,6 +5,7 @@ import { Route, withRouter } from 'react-router-dom';
 import Footer from '@components/Footer';
 import Hero from '@components/Hero';
 import style from './index.sass';
+import Nav from '@components/Nav';
 
 // Route-Split Components
 const loading = () => <div>Loading...</div>;
@@ -25,19 +26,14 @@ class App extends React.Component {
 	}
 
 	render() {
-		return (
-			<div className={ style.app }>
-				<Hero />
-
-				<main className={ style.wrapper }>
-					<Route path="/" exact component={ Home } />
-					<Route path="/blog" exact component={ Blog } />
-					<Route path="/blog/:title" component={ Article } />
-					<Route path="/about" exact component={ About } />
-				</main>
-
-				<Footer />
-			</div>
+		return (			
+			<div className="container page-wrap">
+				<Nav />
+				<Route path="/" exact component={ Home } />
+				<Route path="/blog" exact component={ Blog } />
+				<Route path="/blog/:title" component={ Article } />
+				<Route path="/about" exact component={ About } />
+			</div>			
 		);
 	}
 }
